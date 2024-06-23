@@ -1,2 +1,2 @@
 # Menol
-Menol - Lxurary men's wear brand
+Menol - Lxuary men's wear brand
