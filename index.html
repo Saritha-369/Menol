@@ -1,0 +1,2606 @@
+<!DOCTYPE html>
+<html lang="en" dir="">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=2.0"
+    />
+    <title>MENOL | Online Store</title>
+    <meta name="description" content="MENOL | Online Store" />
+    <meta name="keywords" content="Menol Online Store" />
+    <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+    
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/homePage.css" />
+    <script defer type="text/javascript" src="./js/vendor.js"></script>
+    <script defer type="text/javascript" src="./js/main.js"></script>
+    <style>
+      .c-searchbar__curtain.state-active {
+        opacity: 1;
+        background: #fff;
+      }
+      .isicon--dark {
+        font-weight: 600;
+        font-size: 22px;
+        color: #272727;
+      }
+
+      ul[data-cgid$="_gifts"] > li.c-navbar__dropdown-list--viewall {
+        display: none;
+      }
+
+      .cm-placement
+        .cm-hero-slider.cm-slick-carousel
+        .slick-dots
+        li.slick-active
+        button {
+        background: white;
+      }
+
+      .cm-placement .cm-hero-slider.cm-slick-carousel .slick-dots li button {
+        background: black;
+      }
+
+      h1.kl-home-h1 {
+        all: unset;
+        font-size: 1.14rem;
+        line-height: 1.5rem;
+        letter-spacing: 0.03rem;
+        font-weight: 400;
+        font-family: "Founders-Grotesk", "Founders-Grotesk Fallback";
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .c-footer__copyright p {
+        display: inline;
+      }
+
+      body:not(body.KL-LANG-ar) h1.kl-home-h1 {
+        margin-right: 5px;
+        display: inline-block;
+      }
+
+      .cm-product-gallery {
+        padding-bottom: 40px;
+      }
+
+      .cm-product-gallery .c-tiles__tile-body {
+        min-height: 2rem;
+        padding-top: 40px;
+        padding-bottom: 25px;
+      }
+
+      .cm-product-gallery .cm-cta-button-container a {
+        width: fit-content;
+      }
+
+      .cm-placement .cm-product-gallery .cm-product .slick-arrow {
+        display: inline-block !important;
+      }
+
+      .cm-product-gallery .slick-dots {
+        bottom: -35px;
+      }
+
+      .cm-product-gallery .slick-dots li {
+        height: 5px;
+        width: 5px;
+      }
+
+      .cm-product-gallery .slick-dots li button {
+        background-color: #000;
+        border-radius: 50px;
+        height: 5px;
+        width: 5px;
+        opacity: 0.2;
+        padding: 4px;
+      }
+
+      .cm-product-gallery .slick-dots li.slick-active button {
+        opacity: 1;
+      }
+
+      .cm-product-gallery .slick-dots li button:before {
+        content: "";
+        height: 5px;
+        width: 5px;
+        background-color: transparent;
+      }
+
+      .cm-slick-carousel--inner-arrows .slick-prev {
+        left: 15px;
+      }
+
+      .cm-slick-carousel--inner-arrows .slick-next {
+        right: 15px;
+      }
+
+      .cm-placement .cm-product-gallery .cm-product .slick-list {
+        padding: 0 20px;
+      }
+
+      @media screen and (max-width: 767px) {
+        .cm-product-gallery .c-tiles__tile-body {
+          padding-top: 20px;
+          padding-bottom: 10px;
+        }
+      }
+      @media screen and (min-width: 320px) and (max-width: 769px) {
+        .search-toggle__button__text {
+          display: none;
+        }
+        .c-header__inner-quicklinks__btn.state-active #search-icon-label-close {
+          display: none !important;
+        }
+      }
+    </style>
+    <style>
+      .c-navbar__nav-link__tile-caption {
+        font-weight: 400 !important;
+        color: #000;
+      }
+
+      .c-header__inner-navbar
+        .main-nav__primary__li
+        .c-navbar__nav-link--3:hover:not(.active):not(:disabled):not(
+          .disabled
+        ) {
+      }
+
+      @media screen and (min-width: 1025px) {
+        .c-header__inner-quicklinks__btn #search-icon-label {
+          display: block;
+          margin-left: 10px !important;
+        }
+        body.KL-LANG-ar .c-header__inner-quicklinks__btn #search-icon-label {
+          margin-right: 10px !important;
+          margin-left: inherit;
+        }
+      }
+
+      @media screen and (man-width: 1024px) {
+        .c-header__inner-quicklinks__btn #search-icon-label {
+          display: none;
+        }
+        body.KL-LANG-ar .c-header__inner-quicklinks__btn #search-icon-label {
+          display: none;
+        }
+      }
+
+      .c-header__inner-quicklinks__btn #search-icon-label-close {
+        display: none;
+      }
+
+      .c-header__inner-quicklinks__btn.state-active #search-icon-label {
+        display: none;
+      }
+
+      .c-header__inner-quicklinks__btn.state-active #search-icon-label-close {
+        display: block;
+        margin-left: 8px !important;
+      }
+
+      .c-header__inner-quicklinks__btn .search-icon {
+        display: block;
+      }
+
+      .c-header__inner-quicklinks__btn.state-active .search-icon {
+        display: none;
+      }
+
+      .c-header__inner-quicklinks__btn .close-icon {
+        display: none;
+      }
+
+      .c-header__inner-quicklinks__btn.state-active .close-icon {
+        display: block;
+      }
+
+      .search-toggle__button:hover #search-icon-label-close {
+        color: #6b6b6b;
+      }
+
+      .search-toggle__button:hover .close-icon rect {
+        fill: #6b6b6b;
+      }
+
+      .c-header__inner-quicklink.search {
+        margin-left: 23px;
+      }
+
+      .dy-recommendations__slider .slick-track {
+        display: flex !important;
+      }
+
+      .dy-recommendations__slider .slick-track .slick-slide {
+        height: inherit !important;
+      }
+
+      .dy-recommendations__slider .slick-track .slick-slide > div,
+      .dy-recommendations__slider
+        .slick-track
+        .slick-slide
+        > div
+        .dy-recommendation-product-search {
+        height: 100%;
+      }
+
+      @media screen and (min-width: 1025px) {
+        #aa-searchbox .aa-searchbox__container__input {
+          padding-left: 7.9rem;
+        }
+        #aa-searchbox .aa-searchbox__container__suggestion-output {
+          left: 7.9rem;
+        }
+        #aa-results #aa-query-suggestions .aa-suggestions-query__heading {
+          padding: 0.64286rem 2.14286rem 0.64286rem 7.9rem;
+        }
+        #aa-results #aa-query-suggestions .aa-suggestions-query__query-cont {
+          padding: 0.5rem 2.14286rem 0.5rem 7.8rem;
+        }
+      }
+
+      .navbar-toggler.c-header__inner-quicklinks__btn {
+        display: flex;
+        /*flex-flow: row;*/
+        align-items: center;
+      }
+
+      .burger-icon-menu {
+        width: 15px;
+        height: 15px;
+        margin-top: 2px;
+      }
+
+      .burger-icon-menu rect,
+      .search-icon path,
+      .search-icon rect,
+      .close-icon rect,
+      #search-icon-label-close,
+      .main-menu .c-header__inner-navbar__close-btn {
+        transition: 0.25s ease;
+      }
+
+      .main-menu .c-header__inner-navbar__close-btn svg {
+        width: 16px;
+        height: 16px;
+        margin-top: -1px;
+      }
+
+      @media screen and (min-width: 990px) {
+        .c-header__inner-quicklinks__btn:hover .burger-icon-menu rect,
+        .c-header__inner-quicklinks__btn:hover .search-icon path,
+        .c-header__inner-quicklinks__btn:hover .search-icon rect {
+          fill: #6b6b6b;
+        }
+        .main-menu .c-header__inner-navbar__close-btn:hover {
+          color: #6b6b6b;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        .dy-recommendation-section--search-top
+          #dy-recommendations-15938600
+          .dy-recommendations__title {
+          padding-top: 65px;
+        }
+      }
+
+      .search-icon {
+        width: 16px;
+        height: 16px;
+        margin-top: 2px;
+      }
+
+      .close-icon {
+        width: 18px;
+        margin-top: 2px;
+      }
+
+      .c-header__inner-quicklink:focus-within .quicklink--left {
+        color: #000;
+      }
+
+      .c-header__inner-navbar
+        button:not(:disabled):not(.disabled):not(.active):focus-visible {
+        box-shadow: none;
+      }
+
+      .c-header__inner-quicklinks .navbar-toggler__icon {
+        width: 1.16rem !important;
+      }
+
+      .c-header__inner-navbar .main-nav__primary__li .badge {
+        margin-top: 2px;
+      }
+
+      @media screen and (max-width: 990px) {
+        .search-icon {
+          width: 20px;
+          height: 20px;
+          margin-top: 0px;
+        }
+        .close-icon {
+          width: 20px;
+          height: 20px;
+        }
+        .burger-icon-menu {
+          width: 25px;
+          height: 25px;
+          margin-top: 0px;
+        }
+        .navbar-toggler.menu-active .burger-icon-menu rect:first-child {
+          transform: rotate(45deg) translate(1px, -2px);
+          transform-origin: top left;
+        }
+        .navbar-toggler.menu-active .burger-icon-menu rect:last-child {
+          transform: rotate(-45deg) translate(1px, 1.8px);
+          transform-origin: bottom left;
+        }
+        .navbar-toggler.menu-active .burger-icon-menu rect:nth-child(2) {
+          opacity: 0;
+        }
+      }
+
+      .header-other .c-header {
+        border-bottom: #ebebeb 1px solid;
+      }
+
+      .c-header__inner-navbar
+        .main-nav__primary__li.c-navbar__list-item
+        .c-navbar__header {
+        border-top: none;
+      }
+
+      @media screen and (max-width: 1023px) {
+        .c-header:has(.stripe-selector-banner-container: not(.stripehide)) .c-navbar__header.show {
+          top: 116px !important;
+        }
+      }
+
+      .main-nav__primary .c-navbar__nav-item[data-cgid*="gifts"] span.badge {
+        animation: flash 0.8s infinite alternate;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+      }
+
+      .c-header__inner-navbar .main-nav__primary__li .badge {
+        animation: flash 0.8s infinite alternate;
+      }
+
+      @keyframes flash {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0;
+        }
+      }
+
+      .cm-hero-slider
+        .cm-hero-slide
+        .cm-hero-slide__content
+        .cm-hero-slide__title
+        h2 {
+        background: none !important;
+      }
+
+      li[data-cgid$="man_shoes"]
+        ul.main-nav__primary__level3--tile-group
+        li.c-navbar__dropdown-list--item.c-navbar__list-item.c-navbar__list-item--subtitle-line
+        h3.c-navbar__list-item__level3-subtitle.c-navbar__list-item__level3-subtitle--line {
+        display: none;
+      }
+
+      .c-header__inner-navbar
+        .main-nav__primary__li[data-cgid$="_ramadan"].c-navbar__list-item--tile-in-group:last-of-type,
+      .c-header__inner-navbar
+        .main-nav__primary__li[data-cgid$="_ramadan"]
+        .c-navbar__list-item--tile-in-group:last-of-type {
+        padding-bottom: 0rem;
+      }
+
+      @keyframes fadeInRight {
+        from {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0%);
+        }
+      }
+
+      @keyframes fadeOutRight {
+        from {
+          opacity: 1;
+          transform: translateX(0);
+        }
+        to {
+          opacity: 0;
+          transform: translateX(100%);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeOutBottom {
+        from {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        to {
+          opacity: 0;
+          transform: translateY(100%);
+        }
+      }
+
+      @keyframes fadeInBottom {
+        from {
+          opacity: 0;
+          transform: translateY(100%);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .kl-sitemap {
+        z-index: 9999;
+        display: none;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
+
+      .kl-sitemap .modal-content {
+        background-color: #fefefe;
+        position: absolute;
+        width: 80%;
+        height: 100%;
+        top: var(--header-top-gap);
+        right: 0;
+        opacity: 0;
+        transform: translateY(100%);
+        transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+      }
+
+      .kl-sitemap .close {
+        color: #ffffff !important;
+        opacity: 1 !important;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+        margin-left: auto;
+        padding-right: 15px;
+      }
+
+      .kl-sitemap .close:hover,
+      .kl-sitemap .close:focus {
+        color: #ffffff !important;
+        text-decoration: none;
+        cursor: pointer;
+        opacity: 1 !important;
+      }
+
+      @media (max-width: 1199.98px) {
+        .kl-sitemap .modal-content {
+          width: 100%;
+          height: calc(100% - var(--header-top-gap));
+          top: calc(var(--header-top-gap) * 2);
+        }
+        .kl-sitemap .sitemap-heading {
+          width: 100% !important;
+        }
+      }
+
+      @media (min-width: 1199.99px) {
+        .kl-sitemap .modal-content {
+          width: 100%;
+          max-width: 759px;
+        }
+      }
+      .isicon--dark svg {
+        fill: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div
+      class="page"
+      data-action="Home-Show"
+      data-querystring=""
+      k-listing-id=""
+    >
+      <header class="header-other">
+        <div class="c-header header">
+          <div class="container-fluid h-100">
+            <div class="row bg-dark js-country-selector-banner-container"></div>
+            <div class="row h-100">
+              <div
+                class="c-header__inner col-12 d-flex align-items-stretch justify-content-between position-static"
+              >
+                <div
+                  class="c-header__inner-quicklinks c-header__inner-quicklinks--left navbar-header d-flex align-items-center"
+                >
+                  <button
+                    class="navbar-toggler test c-header__inner-quicklinks__btn js-navbar-toggler navbar-toggler--dark"
+                    data-target="#sg-navbar-collapse"
+                    id="navbar-trigger"
+                    aria-haspopup="dialog"
+                    aria-controls="sg-navbar-collapse"
+                    aria-expanded="false"
+                    aria-label="Navigation menu"
+                  >
+                    <span
+                      class="navbar-toggler__top navbar-toggler__icon"
+                    ></span>
+                    <span
+                      class="navbar-toggler__middle navbar-toggler__icon"
+                    ></span>
+                    <span
+                      class="navbar-toggler__bottom navbar-toggler__icon"
+                    ></span>
+                    <span class="d-none d-lg-block navbar-toggler__text"
+                      >Menu</span
+                    >
+                  </button>
+                  <div class="c-header__inner-quicklink search d-md-flex">
+                    <button
+                      type="button"
+                      class="d-flex align-items-center c-header__inner-quicklinks__btn c-header__inner-quicklinks__btn-search search-toggle__button js-search-icon quicklink quicklink--left js-open-dialog"
+                      id="search-dialog-trigger"
+                      data-target="#search-dialog"
+                      aria-labelledby="search-icon-label"
+                      aria-controls="search-dialog"
+                      aria-haspopup="dialog"
+                      title="Search"
+                    >
+                      <svg
+                        class="search-icon"
+                        width="16"
+                        height="18"
+                        viewbox="0 0 16 18"
+                        fill="none"
+                      >
+                        <path
+                          class="search-icon-circle"
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M6.27983 2.72729C3.76729 2.72729 1.73047 4.76411 1.73047 7.27666C1.73047 9.7892 3.76729 11.826 6.27983 11.826C8.79238 11.826 10.8292 9.7892 10.8292 7.27666C10.8292 4.76411 8.79238 2.72729 6.27983 2.72729ZM0.230469 7.27666C0.230469 3.93569 2.93886 1.22729 6.27983 1.22729C9.6208 1.22729 12.3292 3.93569 12.3292 7.27666C12.3292 10.6176 9.6208 13.326 6.27983 13.326C2.93886 13.326 0.230469 10.6176 0.230469 7.27666Z"
+                          fill="black"
+                        />
+                        <rect
+                          class="search-icon-line"
+                          x="10.3633"
+                          y="10.3041"
+                          width="8.06656"
+                          height="1.5"
+                          rx="0.75"
+                          transform="rotate(45 10.3633 10.3041)"
+                          fill="black"
+                        />
+                      </svg>
+                      <svg
+                        class="close-icon"
+                        width="20"
+                        height="15"
+                        viewbox="0 0 20 15"
+                        fill="none"
+                      >
+                        <rect
+                          x="3.60293"
+                          y="-0.0599976"
+                          width="19.6"
+                          height="1.5"
+                          rx="1.05"
+                          transform="rotate(45 3.60293 -0.0599976)"
+                          fill="black"
+                        />
+                        <rect
+                          x="2.53789"
+                          y="13.6252"
+                          width="19.6"
+                          height="1.5"
+                          rx="1.05"
+                          transform="rotate(-45 2.53789 13.6252)"
+                          fill="black"
+                        />
+                      </svg>
+                      <span
+                        id="search-icon-label"
+                        class="search-toggle__button__text"
+                        >Search</span
+                      ><span
+                        id="search-icon-label-close"
+                        class="ml-3 search-toggle__button__text"
+                        >Close</span
+                      >
+                    </button>
+
+                    <div
+                      class="c-searchbar__curtain js-search-curtain"
+                      aria-hidden="true"
+                    ></div>
+                  </div>
+                </div>
+                <div class="c-header__inner-wrapper d-flex align-items-center">
+                  <div
+                    class="c-header__inner-logo navbar-header d-flex align-items-center"
+                  >
+                    <a
+                      class="c-header__inner-logo-link logo-home d-block"
+                      aria-label="Go to Home Page"
+                      href="#"
+                      id="logo-link"
+                      title="Menol Online Store Home"
+                    >
+                      <span class="isicon--dark">MENOL</span>
+                    </a>
+                  </div>
+                  <nav
+                    class="c-header__inner-navbar main-menu navbar-toggleable-sm menu-toggleable-left multilevel-dropdown d-lg-block js-dialog"
+                    aria-modal="true"
+                    aria-hidden="true"
+                    aria-labelledby="navigation-menu-title"
+                    tabindex="-1"
+                    data-trigger="#navbar-trigger"
+                    id="sg-navbar-collapse"
+                  >
+                    <h2 class="sr-only" id="navigation-menu-title">Menu</h2>
+                    <button
+                      type="button"
+                      class="js-close-button c-header__inner-navbar__close-btn d-none d-lg-block"
+                    >
+                      <i
+                        class="isicon isicon--close-icon close-btn__icon"
+                        role="presentation"
+                        aria-hidden="true"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6 18 18 6M6 6l12 12"
+                          />
+                        </svg>
+                      </i>
+                      Close
+                    </button>
+                    <button
+                      type="button"
+                      class="js-close-button c-header__inner-navbar__close-btn c-header__inner-navbar__close-btn--mobile d-block d-lg-none"
+                    >
+                      <span class="sr-only">Close</span>
+                    </button>
+                    <div class="c-header__inner-navbar--element">
+                      <div
+                        class="main-nav c-navbar navbar navbar-expand-md bg-inverse"
+                        id="menu-container-main"
+                        tabindex="0"
+                      >
+                        <div class="c-navbar__nav menu-group">
+                          <ul
+                            class="main-nav__primary c-navbar__nav-menu nav d-flex flex-column"
+                            data-cart-label="Shopping Bag"
+                          >
+                            <li
+                              class="js-nav-item c-navbar__nav-item main-nav__primary__li nav-item c-navbar__list-item dropdown"
+                              data-cgid="eu1_man"
+                            >
+                              <span class="category-link">
+                                <button
+                                  id="eu1_man"
+                                  type="button"
+                                  class="c-dropdown-menu__link w-100 js-menu-link c-navbar__list-item__action dropdown-link c-navbar__list-item__action--reg-pd has-subcat c-navbar__nav-link--1"
+                                  data-toggle="dropdown"
+                                  aria-haspopup="dialog"
+                                  aria-controls="menu-container-eu1_man"
+                                  aria-expanded="false"
+                                  data-img="#"
+                                  data-name="Men"
+                                  data-level="1"
+                                  data-is-tile-enabled="false"
+                                >
+                                  What's new
+                                </button>
+                              </span>
+                            </li>
+                            <li
+                              class="js-nav-item c-navbar__nav-item main-nav__primary__li nav-item c-navbar__list-item dropdown"
+                              data-cgid="eu1_man"
+                            >
+                              <span class="category-link">
+                                <button
+                                  id="eu1_man"
+                                  type="button"
+                                  class="c-dropdown-menu__link w-100 js-menu-link c-navbar__list-item__action dropdown-link c-navbar__list-item__action--reg-pd has-subcat c-navbar__nav-link--1"
+                                  data-toggle="dropdown"
+                                  aria-haspopup="dialog"
+                                  aria-controls="menu-container-eu1_man"
+                                  aria-expanded="false"
+                                  data-img="#"
+                                  data-name="Men"
+                                  data-level="1"
+                                  data-is-tile-enabled="false"
+                                >
+                                  Accessories
+                                </button>
+                              </span>
+                            </li>
+                            <li
+                              class="js-nav-item c-navbar__nav-item main-nav__primary__li nav-item c-navbar__list-item dropdown"
+                              data-cgid="eu1_man"
+                            >
+                              <span class="category-link">
+                                <button
+                                  id="eu1_man"
+                                  type="button"
+                                  class="c-dropdown-menu__link w-100 js-menu-link c-navbar__list-item__action dropdown-link c-navbar__list-item__action--reg-pd has-subcat c-navbar__nav-link--1"
+                                  data-toggle="dropdown"
+                                  aria-haspopup="dialog"
+                                  aria-controls="menu-container-eu1_man"
+                                  aria-expanded="false"
+                                  data-img="#"
+                                  data-name="Men"
+                                  data-level="1"
+                                  data-is-tile-enabled="false"
+                                >
+                                  Dresses
+                                </button>
+                              </span>
+                            </li>
+                            <li
+                              class="js-nav-item c-navbar__nav-item main-nav__primary__li nav-item c-navbar__list-item dropdown"
+                              data-cgid="eu1_man"
+                            >
+                              <span class="category-link">
+                                <button
+                                  id="eu1_man"
+                                  type="button"
+                                  class="c-dropdown-menu__link w-100 js-menu-link c-navbar__list-item__action dropdown-link c-navbar__list-item__action--reg-pd has-subcat c-navbar__nav-link--1"
+                                  data-toggle="dropdown"
+                                  aria-haspopup="dialog"
+                                  aria-controls="menu-container-eu1_man"
+                                  aria-expanded="false"
+                                  data-img="#"
+                                  data-name="Men"
+                                  data-level="1"
+                                  data-is-tile-enabled="false"
+                                >
+                                  Bags
+                                </button>
+                              </span>
+                            </li>
+                            <li
+                              class="js-nav-item c-navbar__nav-item main-nav__primary__li nav-item c-navbar__list-item dropdown"
+                              data-cgid="eu1_man"
+                            >
+                              <span class="category-link">
+                                <button
+                                  id="eu1_man"
+                                  type="button"
+                                  class="c-dropdown-menu__link w-100 js-menu-link c-navbar__list-item__action dropdown-link c-navbar__list-item__action--reg-pd has-subcat c-navbar__nav-link--1"
+                                  data-toggle="dropdown"
+                                  aria-haspopup="dialog"
+                                  aria-controls="menu-container-eu1_man"
+                                  aria-expanded="false"
+                                  data-img="#"
+                                  data-name="Men"
+                                  data-level="1"
+                                  data-is-tile-enabled="false"
+                                >
+                                  Wallets
+                                </button>
+                              </span>
+                            </li>
+                            <li
+                              class="js-nav-item c-navbar__nav-item main-nav__primary__li nav-item c-navbar__list-item dropdown"
+                              data-cgid="eu1_man"
+                            >
+                              <span class="category-link">
+                                <button
+                                  id="eu1_man"
+                                  type="button"
+                                  class="c-dropdown-menu__link w-100 js-menu-link c-navbar__list-item__action dropdown-link c-navbar__list-item__action--reg-pd has-subcat c-navbar__nav-link--1"
+                                  data-toggle="dropdown"
+                                  aria-haspopup="dialog"
+                                  aria-controls="menu-container-eu1_man"
+                                  aria-expanded="false"
+                                  data-img="#"
+                                  data-name="Men"
+                                  data-level="1"
+                                  data-is-tile-enabled="false"
+                                >
+                                  Wactches
+                                </button>
+                              </span>
+                            </li>
+                            <li
+                              class="js-nav-item c-navbar__nav-item main-nav__primary__li nav-item c-navbar__list-item dropdown"
+                              data-cgid="eu1_man"
+                            >
+                              <span class="category-link">
+                                <button
+                                  id="eu1_man"
+                                  type="button"
+                                  class="c-dropdown-menu__link w-100 js-menu-link c-navbar__list-item__action dropdown-link c-navbar__list-item__action--reg-pd has-subcat c-navbar__nav-link--1"
+                                  data-toggle="dropdown"
+                                  aria-haspopup="dialog"
+                                  aria-controls="menu-container-eu1_man"
+                                  aria-expanded="false"
+                                  data-img="#"
+                                  data-name="Men"
+                                  data-level="1"
+                                  data-is-tile-enabled="false"
+                                >
+                                  Fragrances
+                                </button>
+                              </span>
+                            </li>
+                          </ul>
+                          <hr />
+                          <ul
+                            class="main-nav__secondary c-header__inner-navbar__footer"
+                          >
+                            <li class="main-nav__secondary__li user-li">
+                              <button
+                                class="login-registration__popup-btn user-link quicklink js-open-dialog"
+                                data-url="#"
+                                data-target="#"
+                                data-logged-url=""
+                                id="myaccount-dialog-trigger"
+                                aria-controls="myaccount-dialog"
+                                aria-haspopup="dialog"
+                              >
+                                My Account
+                              </button>
+                            </li>
+                            <li class="main-nav__secondary__li">
+                              <a href="#">Order Status and Return</a>
+                            </li>
+                            <li class="main-nav__secondary__li">
+                              <a href="#">Contact us</a>
+                            </li>
+                            <li class="main-nav__secondary__li">
+                              <a href="#">Book an Appointment</a>
+                            </li>
+                            <li class="main-nav__secondary__li">
+                              <a href="#">Store Locator</a>
+                            </li>
+                            <li class="main-nav__secondary__li">
+                              <a href="#">MENOL Services</a>
+                            </li>
+                            <li class="main-nav__secondary__li">
+                              <a href="#">FAQs</a>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </nav>
+                </div>
+                <div
+                  class="c-header__inner-quicklinks c-header__inner-quicklinks--right navbar-header d-flex align-items-center align-items-md-stretch"
+                >
+                  <div class="customer-quicklink d-flex">
+                    <div
+                      class="user-wishlist c-header__inner-quicklink d-flex"
+                      data-list-url="#"
+                    >
+                      <a
+                        class="d-flex align-items-center text-decoration-none quicklink quicklink--right"
+                        href="#"
+                        aria-label="Wishlist"
+                      >
+                        <div class="user-wishlist-full d-none">
+                          <i
+                            class="isicon isicon--heart-active isicon--dark"
+                            style="width: 22px; height: 22px; line-height: 22px"
+                            role="presentation"
+                            aria-hidden="true"
+                          >
+                            <svg
+                              width="2em"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="size-6"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                              />
+                            </svg>
+                          </i>
+                          <span
+                            class="user__wishlistitems-num wistlist-counter"
+                          >
+                          </span>
+                        </div>
+                        <div class="user-wishlist-empty">
+                          <i
+                            class="isicon isicon--heart isicon--dark"
+                            style="width: 22px; height: 22px; line-height: 22px"
+                            role="presentation"
+                            aria-hidden="true"
+                          >
+                            <svg
+                              width="2em"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              class="size-6"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"
+                              />
+                            </svg>
+                          </i>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div
+        role="main"
+        id="maincontent"
+        class="maincontent maincontent--homepage"
+      >
+        <div class="cm-slot-main cm-slot">
+          <div class="cm-placement cm-placement--main">
+            <div class="cm-hero-slider cm-slick-carousel" id="menolFragrances">
+              <div
+                class="cm-hero-slide"
+                style="
+                  background-color: transparent;
+                  --background-gradient: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 1%,
+                    rgba(0, 0, 0, 0.48) 100%
+                  );
+                  --text-align: left;
+                  --horizontal-align-mobile: center;
+                  --text-align-mobile: center;
+                "
+              >
+                <div class="cm-hero-slide__content">
+                  <div class="cm-hero-slide__full-link">
+                    <a
+                      href="#"
+                      tabindex="0"
+                      aria-hidden="true"
+                      k-test-href="#"
+                    ></a>
+                  </div>
+                  <div
+                    class="cm-hero-slide__title"
+                    data-aos="fade-up"
+                    data-aos-once="true"
+                  >
+                    <h2>Menol Accessories</h2>
+                  </div>
+                  <div
+                    class="cm-hero-slide__links"
+                    data-aos="fade-up"
+                    data-aos-once="true"
+                  >
+                    <div class="cm-hero-slide__link">
+                      <a
+                        href="#"
+                        target="_self"
+                        class="cm-hero-cta-button-primary cm-button-transparent cm-rounded-border"
+                        k-test-href="#"
+                      >
+                        Shop Now
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cm-hero-slide__media">
+                  <div
+                    class="cm-hero-slide__media-picture-box cm-hero-slide__media-desktop"
+                  >
+                    <video
+                      src="https://cdn.pixabay.com/video/2016/09/13/5131-183300018_large.mp4"
+                      data-cm-video
+                      class="cm-video"
+                      autoplay
+                      playsinline
+                      loop
+                      muted
+                      preload="auto"
+                    >
+                      No video available.
+                    </video>
+                  </div>
+                  <div
+                    class="cm-hero-slide__media-picture-box cm-hero-slide__media-mobile"
+                  >
+                    <video
+                      src="https://cdn.pixabay.com/video/2016/09/13/5131-183300018_large.mp4"
+                      data-cm-video
+                      class="cm-video cm-slide-media"
+                      autoplay
+                      playsinline
+                      loop
+                      muted
+                      preload="auto"
+                    >
+                      No video available.
+                    </video>
+                  </div>
+                  <div class="cm-video-actions"></div>
+                </div>
+              </div>
+            </div>
+            <div class="cm-row-banner-evolution">
+              <div
+                class="cm-col-item cm-no-margin-y cm-no-margin-x"
+                style="
+                  background-color: ;
+                  --background-gradient: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 1%,
+                    rgba(0, 0, 0, 0.16) 100%
+                  );
+                "
+              >
+                <a href="#" target="_self" aria-hidden="true" tabindex="0">
+                  <div class="cm-col-item-container">
+                    <div class="cm-col-item-container__picture-box">
+                      <img
+                        src="https://images.unsplash.com/photo-1564245659875-79f41f648854?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Njl8fHN1bmdsYXNzZXN8ZW58MHx8MHx8fDI%3D
+"
+                        alt="DROP_02_LOOK_01_21_044_1x1_sRGB"
+                        class="cm-media cm-col-item-container__picture klcp"
+                        title="DROP_02_LOOK_01_21_044_1x1_sRGB"
+                        loading="eager"
+                      />
+                    </div>
+                    <div
+                      class="cm-col-item-container__content"
+                      data-aos="fade-up"
+                    >
+                      <div class="cm-col-item-container__content-title">
+                        Sunglasses
+                      </div>
+                      <button class="cm-col-item-container__content-link">
+                        Shop Now
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div
+                class="cm-col-item cm-no-margin-y cm-no-margin-x"
+                style="
+                  background-color: ;
+                  --background-gradient: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 1%,
+                    rgba(0, 0, 0, 0.24) 100%
+                  );
+                "
+              >
+                <a href="#" target="_self" aria-hidden="true" tabindex="0">
+                  <div class="cm-col-item-container">
+                    <div class="cm-col-item-container__picture-box">
+                      <img
+                        src="https://cdn.pixabay.com/photo/2019/06/24/00/57/watch-4294991_640.jpg"
+                        alt="M_S Summer 2024 Collection - DROP2_1_1-2"
+                        class="cm-media cm-col-item-container__picture"
+                        title="M_S Summer 2024 Collection - DROP2_1_1-2"
+                        data-klcp-fetchpriority="high"
+                        loading="eager"
+                      />
+                    </div>
+                    <div
+                      class="cm-col-item-container__content"
+                      data-aos="fade-up"
+                    >
+                      <div class="cm-col-item-container__content-title">
+                        Watches
+                      </div>
+                      <button class="cm-col-item-container__content-link">
+                        Shop Now
+                      </button>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="cm-spacer">
+              <div class="cm-spacer-mobile" style="margin-top: 15px"></div>
+              <div class="cm-spacer-desktop" style="margin-top: 40px"></div>
+            </div>
+            <div
+              class="cm-product-gallery"
+              data-aos="fade-up"
+              data-aos-once="true"
+            >
+              <div class="cm-product">
+                <div
+                  class="cm-slick-carousel cm-slick-carousel--inner-arrows"
+                  data-cm-slick-carousel='{"slidesToShow":4,"slidesToScroll":1,"arrows":true,"centerMode":false,"initialSlide":0,"infinite":true,"dots":true,"swipe":false,"rtl":false,"responsive":[{"breakpoint":1024,"settings":{"slidesToShow":2,"slidesToScroll":2,"arrows":false,"swipe":true,"centerMode":false,"initialSlide":0}},{"breakpoint":768,"settings":{"slidesToShow":2,"slidesToScroll":2,"arrows":false,"swipe":true,"centerMode":false,"initialSlide":0}}]}'
+                >
+                  <div class="cm-slick-carousel__item">
+                    <div class="product" data-pid="FLD790AS8KF1P2O">
+                      <div
+                        class="c-tiles__tile product-tile js-product-tile product-line-item"
+                      >
+
+                        <div class="image-container container-lazyload">
+                          <img
+                            src="https://images.unsplash.com/photo-1613521140785-e85e427f8002?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8ZnJhZ3JhbmNlfGVufDB8fDB8fHww"
+                            class="c-lazyload__image lazyload"
+                            alt="Dress"
+                            title="Dress"
+                          />
+
+                          <a
+                            href="#"
+                            tabindex="-1"
+                            aria-label="Dress"
+                            title="Dress"
+                            aria-hidden="true"
+                          ></a>
+                          <span
+                            class="uncollapser__1x1"
+                            aria-hidden="true"
+                          ></span>
+                        </div>
+                        <div class="c-tiles__tile-body tile-body small">
+                          <div class="pdp-link">
+                            <a class="link" href="#">Perfume</a>
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          class="add-to-wishlist add-to-wishlist--simple js-edit-size-attribute js-open-dialog"
+                          data-url="#"
+                          data-context="wishlist-plp"
+                          data-action="/on/demandware.store/Sites-II-Site/en_SM/Wishlist-AddProduct"
+                          data-default-text="Save to Wishlist"
+                          data-item-added-text="View Wishlist"
+                          data-wishlist-href="/ii-en/wishlist"
+                          data-pid="FLD790AS8KF1P2O"
+                          data-toggle="modal"
+                          data-target="#editSizeModal"
+                        >
+                          <span class="add-to-wishlist-symbol">
+                            <i
+                              class="isicon isicon--heart-active"
+                              style="
+                                width: 20px;
+                                height: 20px;
+                                line-height: 20px;
+                              "
+                              role="presentation"
+                              aria-hidden="true"
+                            >
+                              <svg
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  line-height: 20px;
+                                "
+                              >
+                                <title>Wishlist</title>
+                                <use xlink:href="#"></use>
+                              </svg>
+                            </i>
+                            <i
+                              class="isicon isicon--heart"
+                              style="
+                                width: 20px;
+                                height: 20px;
+                                line-height: 20px;
+                              "
+                              role="presentation"
+                              aria-hidden="true"
+                            >
+                              <svg
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  line-height: 20px;
+                                "
+                              >
+                                <title>Wishlist</title>
+                                <use xlink:href="#"></use>
+                              </svg>
+                            </i>
+                          </span>
+                          <span class="sr-only">Save to Wishlist</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cm-slick-carousel__item">
+                    <div class="product" data-pid="FXQ377ASQEF1PMT">
+                      <div
+                        class="c-tiles__tile product-tile js-product-tile product-line-item"
+                      >
+                        <div class="image-container container-lazyload">
+                          <img
+                            src="https://images.unsplash.com/photo-1595642527925-4d41cb781653?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8SEFUfGVufDB8fDB8fHww"
+                            class="c-lazyload__image lazyload"
+                            alt="Hat"
+                            title="Hat"
+                          />
+
+                          <a
+                            href="#"
+                            tabindex="-1"
+                            aria-label="Hat"
+                            title="Hat"
+                            aria-hidden="true"
+                          ></a>
+                          <span
+                            class="uncollapser__1x1"
+                            aria-hidden="true"
+                          ></span>
+                        </div>
+                        <div class="c-tiles__tile-body tile-body small">
+                          <div class="pdp-link">
+                            <a class="link" href="#">Hat</a>
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          class="add-to-wishlist add-to-wishlist--simple js-edit-size-attribute js-open-dialog"
+                          data-url="#"
+                          data-context="wishlist-plp"
+                          data-action="/on/demandware.store/Sites-II-Site/en_SM/Wishlist-AddProduct"
+                          data-default-text="Save to Wishlist"
+                          data-item-added-text="View Wishlist"
+                          data-wishlist-href="/ii-en/wishlist"
+                          data-pid="FXQ377ASQEF1PMT"
+                          data-toggle="modal"
+                          data-target="#editSizeModal"
+                        >
+                          <span class="add-to-wishlist-symbol">
+                            <i
+                              class="isicon isicon--heart-active"
+                              style="
+                                width: 20px;
+                                height: 20px;
+                                line-height: 20px;
+                              "
+                              role="presentation"
+                              aria-hidden="true"
+                            >
+                              <svg
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  line-height: 20px;
+                                "
+                              >
+                                <title>Wishlist</title>
+                                <use xlink:href="#"></use>
+                              </svg>
+                            </i>
+                            <i
+                              class="isicon isicon--heart"
+                              style="
+                                width: 20px;
+                                height: 20px;
+                                line-height: 20px;
+                              "
+                              role="presentation"
+                              aria-hidden="true"
+                            >
+                              <svg
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  line-height: 20px;
+                                "
+                              >
+                                <title>Wishlist</title>
+                                <use xlink:href="#"></use>
+                              </svg>
+                            </i>
+                          </span>
+                          <span class="sr-only">Save to Wishlist</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cm-slick-carousel__item">
+                    <div class="product" data-pid="8R8092AORGF1P8S">
+                      <div
+                        class="c-tiles__tile product-tile js-product-tile product-line-item"
+                      >
+                        <!-- dwMarker="product" dwContentID="fefb710e455130d7a528fa7eff" -->
+                        <div class="image-container container-lazyload">
+                          <img
+                            src="https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hpcnR8ZW58MHx8MHx8fDA%3D"
+                            class="c-lazyload__image lazyload"
+                            alt="Signature"
+                            title="Signature"
+                          />
+
+                          <a
+                            href="#"
+                            tabindex="-1"
+                            aria-label="Signature"
+                            title="Signature"
+                            aria-hidden="true"
+                          ></a>
+                          <span
+                            class="uncollapser__1x1"
+                            aria-hidden="true"
+                          ></span>
+                        </div>
+                        <div class="c-tiles__tile-body tile-body small">
+                          <div class="pdp-link">
+                            <a class="link" href="#">Shirt</a>
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          class="add-to-wishlist add-to-wishlist--simple js-edit-size-attribute js-open-dialog"
+                          data-url="#"
+                          data-context="wishlist-plp"
+                          data-action="/on/demandware.store/Sites-II-Site/en_SM/Wishlist-AddProduct"
+                          data-default-text="Save to Wishlist"
+                          data-item-added-text="View Wishlist"
+                          data-wishlist-href="/ii-en/wishlist"
+                          data-pid="8R8092AORGF1P8S"
+                          data-toggle="modal"
+                          data-target="#editSizeModal"
+                        >
+                          <span class="add-to-wishlist-symbol">
+                            <i
+                              class="isicon isicon--heart-active"
+                              style="
+                                width: 20px;
+                                height: 20px;
+                                line-height: 20px;
+                              "
+                              role="presentation"
+                              aria-hidden="true"
+                            >
+                              <svg
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  line-height: 20px;
+                                "
+                              >
+                                <title>Wishlist</title>
+                                <use xlink:href="#"></use>
+                              </svg>
+                            </i>
+                            <i
+                              class="isicon isicon--heart"
+                              style="
+                                width: 20px;
+                                height: 20px;
+                                line-height: 20px;
+                              "
+                              role="presentation"
+                              aria-hidden="true"
+                            >
+                              <svg
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  line-height: 20px;
+                                "
+                              >
+                                <title>Wishlist</title>
+                                <use xlink:href="#"></use>
+                              </svg>
+                            </i>
+                          </span>
+                          <span class="sr-only">Save to Wishlist</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cm-slick-carousel__item">
+                    <div class="product" data-pid="FS1287ARX4F0GCT">
+                      <div
+                        class="c-tiles__tile product-tile js-product-tile product-line-item"
+                      >
+                        <!-- dwMarker="product" dwContentID="9f58d6afd343770b2dd6e20c54" -->
+                        <div class="image-container container-lazyload">
+                          <img
+                            src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FwfGVufDB8fDB8fHww"
+                            class="c-lazyload__image lazyload"
+                            alt="Shirt"
+                            title="Shirt"
+                          />
+
+                          <a
+                            href="#"
+                            tabindex="-1"
+                            aria-label="Shirt"
+                            title="Shirt"
+                            aria-hidden="true"
+                          ></a>
+                          <span
+                            class="uncollapser__1x1"
+                            aria-hidden="true"
+                          ></span>
+                        </div>
+                        <div class="c-tiles__tile-body tile-body small">
+                          <div class="pdp-link">
+                            <a class="link" href="#">Cap</a>
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          class="add-to-wishlist add-to-wishlist--simple js-edit-size-attribute js-open-dialog"
+                          data-url="#"
+                          data-context="wishlist-plp"
+                          data-action="/on/demandware.store/Sites-II-Site/en_SM/Wishlist-AddProduct"
+                          data-default-text="Save to Wishlist"
+                          data-item-added-text="View Wishlist"
+                          data-wishlist-href="/ii-en/wishlist"
+                          data-pid="FS1287ARX4F0GCT"
+                          data-toggle="modal"
+                          data-target="#editSizeModal"
+                        >
+                          <span class="add-to-wishlist-symbol">
+                            <i
+                              class="isicon isicon--heart-active"
+                              style="
+                                width: 20px;
+                                height: 20px;
+                                line-height: 20px;
+                              "
+                              role="presentation"
+                              aria-hidden="true"
+                            >
+                              <svg
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  line-height: 20px;
+                                "
+                              >
+                                <title>Wishlist</title>
+                                <use xlink:href="#"></use>
+                              </svg>
+                            </i>
+                            <i
+                              class="isicon isicon--heart"
+                              style="
+                                width: 20px;
+                                height: 20px;
+                                line-height: 20px;
+                              "
+                              role="presentation"
+                              aria-hidden="true"
+                            >
+                              <svg
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  line-height: 20px;
+                                "
+                              >
+                                <title>Wishlist</title>
+                                <use xlink:href="#"></use>
+                              </svg>
+                            </i>
+                          </span>
+                          <span class="sr-only">Save to Wishlist</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="cm-slick-carousel__item">
+                    <div class="product" data-pid="7X1674AF5TF1OOF">
+                      <div
+                        class="c-tiles__tile product-tile js-product-tile product-line-item"
+                      >
+                        <div class="image-container container-lazyload">
+                          <img
+                            src="https://images.unsplash.com/photo-1560472355-536de3962603?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8d2FsbGV0fGVufDB8fDB8fHww"
+                            class="c-lazyload__image lazyload"
+                            alt="menol Diagonal Slides"
+                            title="menol Diagonal Slides"
+                          />
+
+                          <a
+                            href="#"
+                            tabindex="-1"
+                            aria-label="menol Diagonal Slides"
+                            title="menol Diagonal Slides"
+                            aria-hidden="true"
+                          ></a>
+                          <span
+                            class="uncollapser__1x1"
+                            aria-hidden="true"
+                          ></span>
+                        </div>
+                        <div class="c-tiles__tile-body tile-body small">
+                          <div class="pdp-link">
+                            <a class="link" href="#">Wallet</a>
+                          </div>
+                        </div>
+                        <button
+                          type="button"
+                          class="add-to-wishlist add-to-wishlist--simple js-edit-size-attribute js-open-dialog"
+                          data-url="#"
+                          data-context="wishlist-plp"
+                          data-action="/on/demandware.store/Sites-II-Site/en_SM/Wishlist-AddProduct"
+                          data-default-text="Save to Wishlist"
+                          data-item-added-text="View Wishlist"
+                          data-wishlist-href="/ii-en/wishlist"
+                          data-pid="7X1674AF5TF1OOF"
+                          data-toggle="modal"
+                          data-target="#editSizeModal"
+                        >
+                          <span class="add-to-wishlist-symbol">
+                            <i
+                              class="isicon isicon--heart-active"
+                              style="
+                                width: 20px;
+                                height: 20px;
+                                line-height: 20px;
+                              "
+                              role="presentation"
+                              aria-hidden="true"
+                            >
+                              <svg
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  line-height: 20px;
+                                "
+                              >
+                                <title>Wishlist</title>
+                                <use
+                                  xlink:href="/on/demandware.static/Sites-II-Site/-/en_SM/v1718969153887/images/sprite.svg#heart-active"
+                                ></use>
+                              </svg>
+                            </i>
+                            <i
+                              class="isicon isicon--heart"
+                              style="
+                                width: 20px;
+                                height: 20px;
+                                line-height: 20px;
+                              "
+                              role="presentation"
+                              aria-hidden="true"
+                            >
+                              <svg
+                                style="
+                                  width: 20px;
+                                  height: 20px;
+                                  line-height: 20px;
+                                "
+                              >
+                                <title>Wishlist</title>
+                                <use
+                                  xlink:href="/on/demandware.static/Sites-II-Site/-/en_SM/v1718969153887/images/sprite.svg#heart"
+                                ></use>
+                              </svg>
+                            </i>
+                          </span>
+                          <span class="sr-only">Save to Wishlist</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cm-hero-slider cm-slick-carousel">
+              <div
+                class="cm-hero-slide"
+                style="
+                  background-color: transparent;
+                  --background-gradient: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 1%,
+                    rgba(0, 0, 0, 0.48) 100%
+                  );
+                  --text-align: left;
+                  --horizontal-align-mobile: center;
+                  --text-align-mobile: center;
+                "
+              >
+                <div class="cm-hero-slide__content">
+                  <div class="cm-hero-slide__full-link">
+                    <a href="#" tabindex="0" aria-hidden="true"></a>
+                  </div>
+                  <div
+                    class="cm-hero-slide__title"
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                  >
+                    <h2>Bags</h2>
+                  </div>
+                  <div
+                    class="cm-hero-slide__links"
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                  >
+                    <div class="cm-hero-slide__link">
+                      <a
+                        href="#"
+                        target="_self"
+                        class="cm-hero-cta-button-primary cm-button-transparent cm-rounded-border"
+                      >
+                        Shop for him
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cm-hero-slide__media">
+                  <div
+                    class="cm-hero-slide__media-picture-box cm-hero-slide__media-desktop"
+                  >
+                    <div
+                      class="cm-media cm-media--background"
+                      style="
+                        background-image: url(https://images.unsplash.com/photo-1490427712608-588e68359dbd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                      "
+                      title=""
+                    ></div>
+                  </div>
+                  <div
+                    class="cm-hero-slide__media-picture-box cm-hero-slide__media-mobile"
+                  >
+                    <div
+                      class="cm-media cm-media--background cm-slide-media"
+                      style="
+                        background-image: url(https://images.unsplash.com/photo-1490427712608-588e68359dbd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+                      "
+                      title=""
+                    ></div>
+                  </div>
+                  <div class="cm-video-actions"></div>
+                </div>
+              </div>
+            </div>
+            <div class="cm-hero-slider cm-slick-carousel">
+              <div
+                class="cm-hero-slide"
+                style="
+                  background-color: transparent;
+                  --background-gradient: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 1%,
+                    rgba(0, 0, 0, 0.48) 100%
+                  );
+                  --text-align: left;
+                  --horizontal-align-mobile: center;
+                  --text-align-mobile: center;
+                "
+              >
+                <div class="cm-hero-slide__content">
+                  <div class="cm-hero-slide__full-link">
+                    <a href="#" tabindex="0" aria-hidden="true"></a>
+                  </div>
+                  <div
+                    class="cm-hero-slide__title"
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                  >
+                    <h2>Beachwear</h2>
+                  </div>
+                  <div
+                    class="cm-hero-slide__links"
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                  >
+                    <div class="cm-hero-slide__link">
+                      <a
+                        href="#"
+                        target="_self"
+                        class="cm-hero-cta-button-primary cm-button-transparent cm-rounded-border"
+                      >
+                        Shop for Him
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cm-hero-slide__media">
+                  <div
+                    class="cm-hero-slide__media-picture-box cm-hero-slide__media-desktop"
+                  >
+                    <div
+                      class="cm-media cm-media--background"
+                      style="
+                        background-image: url(https://cdn.pixabay.com/photo/2019/09/04/13/41/couple-4451632_640.jpg);
+                      "
+                      title=""
+                    ></div>
+                  </div>
+                  <div
+                    class="cm-hero-slide__media-picture-box cm-hero-slide__media-mobile"
+                  >
+                    <div
+                      class="cm-media cm-media--background cm-slide-media"
+                      style="
+                        background-image: url(https://cdn.pixabay.com/photo/2019/09/04/13/41/couple-4451632_640.jpg);
+                      "
+                      title=""
+                    ></div>
+                  </div>
+                  <div class="cm-video-actions"></div>
+                </div>
+              </div>
+              <div
+                class="cm-hero-slide"
+                style="
+                  background-color: transparent;
+                  --background-gradient: radial-gradient(
+                    90% 37% at 65% 38%,
+                    rgba(0, 0, 0, 0) 1%,
+                    rgba(0, 0, 0, 0.48) 100%
+                  );
+                  --text-align: left;
+                  --horizontal-align-mobile: center;
+                  --text-align-mobile: center;
+                "
+              >
+                <div class="cm-hero-slide__content">
+                  <div class="cm-hero-slide__full-link">
+                    <a href="#" tabindex="0" aria-hidden="true"></a>
+                  </div>
+                  <div
+                    class="cm-hero-slide__title"
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                  >
+                    <h2>Beachwear</h2>
+                  </div>
+                  <div
+                    class="cm-hero-slide__links"
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                  >
+                    <div class="cm-hero-slide__link">
+                      <a
+                        href="#"
+                        target="_self"
+                        class="cm-hero-cta-button-primary cm-button-transparent cm-rounded-border"
+                      >
+                        Shop for Him
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cm-hero-slide__media">
+                  <div
+                    class="cm-hero-slide__media-picture-box cm-hero-slide__media-desktop"
+                  >
+                    <div
+                      class="cm-media cm-media--background"
+                      style="
+                        background-image: url(https://cdn.pixabay.com/photo/2023/05/25/10/27/men-8016782_640.jpg);
+                      "
+                      title=""
+                    ></div>
+                  </div>
+                  <div
+                    class="cm-hero-slide__media-picture-box cm-hero-slide__media-mobile"
+                  >
+                    <div
+                      class="cm-media cm-media--background cm-slide-media"
+                      style="
+                        background-image: url(https://cdn.pixabay.com/photo/2023/05/25/10/27/men-8016782_640.jpg);
+                      "
+                      title=""
+                    ></div>
+                  </div>
+                  <div class="cm-video-actions"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cm-hero-slider cm-slick-carousel">
+              <div
+                class="cm-hero-slide"
+                style="
+                  background-color: transparent;
+                  --background-gradient: linear-gradient(
+                    180deg,
+                    rgba(0, 0, 0, 0) 1%,
+                    rgba(0, 0, 0, 0.48) 100%
+                  );
+                  --text-align: left;
+                  --horizontal-align-mobile: center;
+                  --text-align-mobile: center;
+                "
+              >
+                <div class="cm-hero-slide__content">
+                  <div class="cm-hero-slide__full-link">
+                    <a href="#" tabindex="0" aria-hidden="true"></a>
+                  </div>
+                  <div
+                    class="cm-hero-slide__title"
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                  >
+                    <h2>Suits</h2>
+                  </div>
+                  <div
+                    class="cm-hero-slide__links"
+                    data-aos="fade-in"
+                    data-aos-once="true"
+                  >
+                    <div class="cm-hero-slide__link">
+                      <a
+                        href="#"
+                        target="_self"
+                        class="cm-hero-cta-button-primary cm-button-transparent cm-rounded-border"
+                      >
+                        Shop for him
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="cm-hero-slide__media">
+                  <div
+                    class="cm-hero-slide__media-picture-box cm-hero-slide__media-desktop"
+                  >
+                    <div
+                      class="cm-media cm-media--background"
+                      style="
+                        background-image: url(https://cdn.pixabay.com/photo/2016/11/22/22/25/groom-1850932_1280.jpg);
+                      "
+                      title=""
+                    ></div>
+                  </div>
+                  <div
+                    class="cm-hero-slide__media-picture-box cm-hero-slide__media-mobile"
+                  >
+                    <div
+                      class="cm-media cm-media--background cm-slide-media"
+                      style="
+                        background-image: url(https://cdn.pixabay.com/photo/2016/11/22/22/25/groom-1850932_1280.jpg);
+                      "
+                      title=""
+                    ></div>
+                  </div>
+                  <div class="cm-video-actions"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+          <script defer type="text/javascript" src="./js/script.js"></script>
+
+      <footer class="c-footer" id="footercontent">
+      
+        
+       
+        <!-- end -->
+
+        <div
+          class="c-footer__top pt-6 pb-5 pt-lg-5 pb-lg-6 py-xl-5 container-fluid"
+        >
+          <div class="c-footer__top-container row">
+            <div class="c-footer__item footer-item col-12 col-lg-6 col-xl-4">
+              <div class="c-footer__booking row">
+                <div class="c-footer__top-title d-none d-lg-block col-12">
+                  <span>Menol Boutiques</span>
+                </div>
+                <div class="col-12 col-lg-6 mb-3 mb-lg-0">
+                  <a
+                    class="btn btn-outline-primary btn-block c-footer__link-btn book_an_appointment-btn"
+                    href="#"
+                    gtm-data="Home"
+                  >
+                    <i
+                      class="isicon isicon--calendar-icon isicon--dark"
+                      style="width: 16px; height: 16px; line-height: 16px"
+                      role="presentation"
+                      aria-hidden="true"
+                    >
+                      <svg style="width: 16px; height: 16px; line-height: 16px">
+                        <title>Book an appointment</title>
+                        <use
+                          xlink:href="/on/demandware.static/Sites-II-Site/-/en_SM/v1718969153887/images/sprite.svg#calendar-icon"
+                        ></use>
+                      </svg>
+                    </i>
+                    Book an appointment
+                  </a>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <a
+                    class="btn btn-outline-primary btn-block c-footer__link-btn find_a_store-btn"
+                    href="#"
+                  >
+                    <i
+                      class="isicon isicon--location-icon isicon--dark"
+                      style="width: 16px; height: 16px; line-height: 16px"
+                      role="presentation"
+                      aria-hidden="true"
+                    >
+                      <svg style="width: 16px; height: 16px; line-height: 16px">
+                        <title>Store Locator</title>
+                        <use xlink:href="#"></use>
+                      </svg>
+                    </i>
+                    Store Locator
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="c-footer__item footer-item col-12 col-lg-6 col-xl-4">
+              <div class="c-footer__newsletter">
+                <form class="subscribe-email-form" action="#" role="form">
+                  <div class="c-footer__top-title col-12 email-description">
+                    <span>Subscribe to our Newsletter</span>
+                  </div>
+                  <div class="form-group required">
+                    <div class="input-group">
+                      <input
+                        type="email"
+                        autocomplete="email"
+                        class="form-control"
+                        name="hpEmailSignUp"
+                        placeholder="Enter your e-mail"
+                        aria-label="Enter your e-mail"
+                        aria-describedby="newsletter-signup-assistive-text"
+                        pattern="^[\w.%+-]+@[\w.-]+\.[\w]{2,6}$"
+                        data-missing-error="Please enter an email"
+                        data-pattern-mismatch="Please enter a valid email format"
+                        required
+                      />
+                      <div class="input-group-append">
+                        <button
+                          type="submit"
+                          class="btn btn-icon btn-outline-primary subscribe-email c-footer__link-btn"
+                        >
+                          <i
+                            class="isicon isicon--arrow-right isicon--dark"
+                            style="width: 16px; height: 16px; line-height: 16px"
+                            role="presentation"
+                            aria-hidden="true"
+                          >
+                            <svg
+                              style="
+                                width: 16px;
+                                height: 16px;
+                                line-height: 16px;
+                              "
+                            >
+                              <title>Next</title>
+                              <use
+                                xlink:href="/on/demandware.static/Sites-II-Site/-/en_SM/v1718969153887/images/sprite.svg#arrow-right"
+                              ></use>
+                            </svg>
+                          </i>
+                          Next
+                        </button>
+                      </div>
+                    </div>
+                    <div
+                      class="invalid-feedback"
+                      id="newsletter-signup-assistive-text"
+                    ></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div
+              class="c-footer__item footer-item d-none d-lg-block col-lg-6 col-xl-4"
+            >
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <label
+                    class="d-flex flex-column c-footer__top-title custom-form-label"
+                    for="country-shippingto"
+                    >Country/Region</label
+                  >
+                  <select
+                    class="custom-select form-control js-country-selector country"
+                    id="country-shippingto"
+                    data-url="#"
+                    name="shippingTo"
+                    data-prev-locale="en_SM"
+                    aria-label="Select Country/Region"
+                  >
+                    <option data-locale="en_AU" data-currencycode="AUD">
+                      Australia
+                    </option>
+                    <option data-locale="de_AT" data-currencycode="EUR">
+                      Austria
+                    </option>
+                    <option data-locale="ar_BH" data-currencycode="BHD">
+                      Bahrain
+                    </option>
+                    <option data-locale="en_BE" data-currencycode="EUR">
+                      Belgium
+                    </option>
+                    <option data-locale="en_BG" data-currencycode="EUR">
+                      Bulgaria
+                    </option>
+                    <option data-locale="fr_CA" data-currencycode="CAD">
+                      Canada
+                    </option>
+                    <option data-locale="zh_CN" data-currencycode="null">
+                      China Mainland
+                    </option>
+                    <option data-locale="en_HR" data-currencycode="EUR">
+                      Croatia
+                    </option>
+                    <option data-locale="en_CY" data-currencycode="EUR">
+                      Cyprus
+                    </option>
+                    <option data-locale="en_CZ" data-currencycode="CZK">
+                      Czech Republic
+                    </option>
+                    <option data-locale="en_DK" data-currencycode="EUR">
+                      Denmark
+                    </option>
+                    <option data-locale="en_EE" data-currencycode="EUR">
+                      Estonia
+                    </option>
+                    <option data-locale="en_FI" data-currencycode="EUR">
+                      Finland
+                    </option>
+                    <option data-locale="en_FR" data-currencycode="EUR">
+                      France
+                    </option>
+                    <option data-locale="de_DE" data-currencycode="EUR">
+                      Germany
+                    </option>
+                    <option data-locale="en_GR" data-currencycode="EUR">
+                      Greece
+                    </option>
+                    <option data-locale="zh_HK" data-currencycode="HKD">
+                      Hong Kong SAR
+                    </option>
+                    <option data-locale="en_HU" data-currencycode="EUR">
+                      Hungary
+                    </option>
+                    <option
+                      data-locale="en_SM"
+                      data-currencycode="EUR"
+                      selected
+                    >
+                      International
+                    </option>
+                    <option data-locale="en_IE" data-currencycode="EUR">
+                      Ireland
+                    </option>
+                    <option data-locale="en_IT" data-currencycode="EUR">
+                      Italy
+                    </option>
+                    <option data-locale="ja_JP" data-currencycode="JPY">
+                      Japan
+                    </option>
+                    <option data-locale="ar_KW" data-currencycode="KWD">
+                      Kuwait
+                    </option>
+                    <option data-locale="en_LV" data-currencycode="EUR">
+                      Latvia
+                    </option>
+                    <option data-locale="en_LT" data-currencycode="EUR">
+                      Lithuania
+                    </option>
+                    <option data-locale="en_LU" data-currencycode="EUR">
+                      Luxembourg
+                    </option>
+                    <option data-locale="en_MY" data-currencycode="MYR">
+                      Malaysia
+                    </option>
+                    <option data-locale="en_MT" data-currencycode="EUR">
+                      Malta
+                    </option>
+                    <option data-locale="es_MX" data-currencycode="MXN">
+                      Mexico
+                    </option>
+                    <option data-locale="fr_MC" data-currencycode="EUR">
+                      Monaco
+                    </option>
+                    <option data-locale="en_NL" data-currencycode="EUR">
+                      Netherlands
+                    </option>
+                    <option data-locale="en_NO" data-currencycode="EUR">
+                      Norway
+                    </option>
+                    <option data-locale="en_PL" data-currencycode="EUR">
+                      Poland
+                    </option>
+                    <option data-locale="en_PT" data-currencycode="EUR">
+                      Portugal
+                    </option>
+                    <option data-locale="ar_QA" data-currencycode="QAR">
+                      Qatar
+                    </option>
+                    <option data-locale="en_RO" data-currencycode="EUR">
+                      Romania
+                    </option>
+                    <option data-locale="en_RU" data-currencycode="EUR">
+                      Russia
+                    </option>
+                    <option data-locale="ar_SA" data-currencycode="SAR">
+                      Saudi Arabia
+                    </option>
+                    <option data-locale="en_SG" data-currencycode="SGD">
+                      Singapore
+                    </option>
+                    <option data-locale="en_SK" data-currencycode="EUR">
+                      Slovakia
+                    </option>
+                    <option data-locale="en_SI" data-currencycode="EUR">
+                      Slovenia
+                    </option>
+                    <option data-locale="ko_KR" data-currencycode="KRW">
+                      South Korea
+                    </option>
+                    <option data-locale="en_ES" data-currencycode="EUR">
+                      Spain
+                    </option>
+                    <option data-locale="en_SE" data-currencycode="EUR">
+                      Sweden
+                    </option>
+                    <option data-locale="fr_CH" data-currencycode="CHF">
+                      Switzerland
+                    </option>
+                    <option data-locale="zh_TW" data-currencycode="TWD">
+                      Taiwan Region
+                    </option>
+                    <option data-locale="en_TR" data-currencycode="TRY">
+                      Turkey
+                    </option>
+                    <option data-locale="en_AE" data-currencycode="AED">
+                      United Arab Emirates
+                    </option>
+                    <option data-locale="en_GB" data-currencycode="GBP">
+                      United Kingdom
+                    </option>
+                    <option data-locale="en_US" data-currencycode="USD">
+                      United States
+                    </option>
+                  </select>
+                </div>
+                <div class="col-12 col-md-6">
+                  <label
+                    class="d-flex flex-column c-footer__top-title custom-form-label"
+                    for="country-language"
+                    >Language</label
+                  >
+                  <select
+                    class="custom-select form-control js-country-selector language"
+                    id="country-language"
+                    data-url="#"
+                    name="shippingTo"
+                    data-prev-locale="en_SM"
+                    aria-label="Select language"
+                  >
+                    <option
+                      data-locale="en_SM"
+                      data-currencycode="EUR"
+                      selected
+                    >
+                      English
+                    </option>
+                    <option data-locale="es_SM" data-currencycode="EUR">
+                      Spanish
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="c-footer__bottom border-dark-10 border-right-0 border-bottom-0 border-left-0 pt-5"
+        >
+          <div class="container-fluid">
+            <div class="c-footer__mobile-countries d-lg-none">
+              <div class="mobile-countries row">
+                <div class="col-5 col-sm-4">
+                  <label for="mobile-countries__select-shippingto"
+                    >Country/Region</label
+                  >
+                </div>
+                <div class="col-7 col-sm-8">
+                  <select
+                    id="mobile-countries__select-shippingto"
+                    class="mobile-countries__select js-country-selector country"
+                    data-url="#"
+                    name="shippingTo"
+                    data-prev-locale="en_SM"
+                    aria-label="Select Country/Region"
+                  >
+                    <option data-locale="en_AU" data-currencycode="AUD">
+                      Australia
+                    </option>
+                    <option data-locale="de_AT" data-currencycode="EUR">
+                      Austria
+                    </option>
+                    <option data-locale="ar_BH" data-currencycode="BHD">
+                      Bahrain
+                    </option>
+                    <option data-locale="en_BE" data-currencycode="EUR">
+                      Belgium
+                    </option>
+                    <option data-locale="en_BG" data-currencycode="EUR">
+                      Bulgaria
+                    </option>
+                    <option data-locale="fr_CA" data-currencycode="CAD">
+                      Canada
+                    </option>
+                    <option data-locale="zh_CN" data-currencycode="null">
+                      China Mainland
+                    </option>
+                    <option data-locale="en_HR" data-currencycode="EUR">
+                      Croatia
+                    </option>
+                    <option data-locale="en_CY" data-currencycode="EUR">
+                      Cyprus
+                    </option>
+                    <option data-locale="en_CZ" data-currencycode="CZK">
+                      Czech Republic
+                    </option>
+                    <option data-locale="en_DK" data-currencycode="EUR">
+                      Denmark
+                    </option>
+                    <option data-locale="en_EE" data-currencycode="EUR">
+                      Estonia
+                    </option>
+                    <option data-locale="en_FI" data-currencycode="EUR">
+                      Finland
+                    </option>
+                    <option data-locale="en_FR" data-currencycode="EUR">
+                      France
+                    </option>
+                    <option data-locale="de_DE" data-currencycode="EUR">
+                      Germany
+                    </option>
+                    <option data-locale="en_GR" data-currencycode="EUR">
+                      Greece
+                    </option>
+                    <option data-locale="zh_HK" data-currencycode="HKD">
+                      Hong Kong SAR
+                    </option>
+                    <option data-locale="en_HU" data-currencycode="EUR">
+                      Hungary
+                    </option>
+                    <option
+                      data-locale="en_SM"
+                      data-currencycode="EUR"
+                      selected
+                    >
+                      International
+                    </option>
+                    <option data-locale="en_IE" data-currencycode="EUR">
+                      Ireland
+                    </option>
+                    <option data-locale="en_IT" data-currencycode="EUR">
+                      Italy
+                    </option>
+                    <option data-locale="ja_JP" data-currencycode="JPY">
+                      Japan
+                    </option>
+                    <option data-locale="ar_KW" data-currencycode="KWD">
+                      Kuwait
+                    </option>
+                    <option data-locale="en_LV" data-currencycode="EUR">
+                      Latvia
+                    </option>
+                    <option data-locale="en_LT" data-currencycode="EUR">
+                      Lithuania
+                    </option>
+                    <option data-locale="en_LU" data-currencycode="EUR">
+                      Luxembourg
+                    </option>
+                    <option data-locale="en_MY" data-currencycode="MYR">
+                      Malaysia
+                    </option>
+                    <option data-locale="en_MT" data-currencycode="EUR">
+                      Malta
+                    </option>
+                    <option data-locale="es_MX" data-currencycode="MXN">
+                      Mexico
+                    </option>
+                    <option data-locale="fr_MC" data-currencycode="EUR">
+                      Monaco
+                    </option>
+                    <option data-locale="en_NL" data-currencycode="EUR">
+                      Netherlands
+                    </option>
+                    <option data-locale="en_NO" data-currencycode="EUR">
+                      Norway
+                    </option>
+                    <option data-locale="en_PL" data-currencycode="EUR">
+                      Poland
+                    </option>
+                    <option data-locale="en_PT" data-currencycode="EUR">
+                      Portugal
+                    </option>
+                    <option data-locale="ar_QA" data-currencycode="QAR">
+                      Qatar
+                    </option>
+                    <option data-locale="en_RO" data-currencycode="EUR">
+                      Romania
+                    </option>
+                    <option data-locale="en_RU" data-currencycode="EUR">
+                      Russia
+                    </option>
+                    <option data-locale="ar_SA" data-currencycode="SAR">
+                      Saudi Arabia
+                    </option>
+                    <option data-locale="en_SG" data-currencycode="SGD">
+                      Singapore
+                    </option>
+                    <option data-locale="en_SK" data-currencycode="EUR">
+                      Slovakia
+                    </option>
+                    <option data-locale="en_SI" data-currencycode="EUR">
+                      Slovenia
+                    </option>
+                    <option data-locale="ko_KR" data-currencycode="KRW">
+                      South Korea
+                    </option>
+                    <option data-locale="en_ES" data-currencycode="EUR">
+                      Spain
+                    </option>
+                    <option data-locale="en_SE" data-currencycode="EUR">
+                      Sweden
+                    </option>
+                    <option data-locale="fr_CH" data-currencycode="CHF">
+                      Switzerland
+                    </option>
+                    <option data-locale="zh_TW" data-currencycode="TWD">
+                      Taiwan Region
+                    </option>
+                    <option data-locale="en_TR" data-currencycode="TRY">
+                      Turkey
+                    </option>
+                    <option data-locale="en_AE" data-currencycode="AED">
+                      United Arab Emirates
+                    </option>
+                    <option data-locale="en_GB" data-currencycode="GBP">
+                      United Kingdom
+                    </option>
+                    <option data-locale="en_US" data-currencycode="USD">
+                      United States
+                    </option>
+                  </select>
+                </div>
+              </div>
+              <div class="mobile-countries row">
+                <div class="col-5 col-sm-4">
+                  <label for="mobile-countries__select-language"
+                    >Language</label
+                  >
+                </div>
+                <div class="col-7 col-sm-8">
+                  <select
+                    id="mobile-countries__select-language"
+                    class="mobile-countries__select js-country-selector language"
+                    data-url="#"
+                    name="shippingTo"
+                    data-prev-locale="en_SM"
+                    aria-label="Select language"
+                  >
+                    <option
+                      data-locale="en_SM"
+                      data-currencycode="EUR"
+                      selected
+                    >
+                      English
+                    </option>
+                    <option data-locale="es_SM" data-currencycode="EUR">
+                      Spanish
+                    </option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div
+              class="c-footer__bottom-container footer-container row bg-gray-light"
+            >
+              <div class="c-footer__item footer-item col-lg-2 col-12 store">
+                <div class="position-relative">
+                  <button
+                    aria-controls="collapsible-account-footer-01--footer"
+                    aria-expanded="false"
+                    class="c-footer__title btn text-left btn-block d-lg-none js-footer-button"
+                  >
+                    Client Services
+                  </button>
+                  <h2 class="c-footer__title d-none d-lg-block">
+                    Client Services
+                  </h2>
+                </div>
+                <ul
+                  class="c-footer__menu menu-footer content"
+                  id="collapsible-account-footer-01--footer"
+                >
+                  <li class="c-footer__menu-item">
+                    <a
+                      class="c-footer__menu-link c-footer__menu-link-contactus"
+                      href="#"
+                      title="Go to Contact Us"
+                      >Contact Us</a
+                    >
+                  </li>
+                  <li class="c-footer__menu-item">
+                    <a
+                      class="c-footer__menu-link"
+                      href="#"
+                      title="Go to Book an Appointment"
+                      >Book an Appointment</a
+                    >
+                  </li>
+                  <li class="c-footer__menu-item">
+                    <a class="c-footer__menu-link" href="#" title="Go to FAQs"
+                      >FAQs</a
+                    >
+                  </li>
+                  <li class="c-footer__menu-item">
+                    <a
+                      class="c-footer__menu-link"
+                      href="#"
+                      title="Go to menol Services"
+                      >Menol Services</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="c-footer__item footer-item col-lg-2 col-12 store">
+                <div class="position-relative">
+                  <button
+                    aria-controls="collapsible-account-footer-03--footer"
+                    aria-expanded="false"
+                    class="c-footer__title btn text-left btn-block d-lg-none js-footer-button"
+                  >
+                    Corporate
+                  </button>
+                  <h2 class="c-footer__title d-none d-lg-block">Corporate</h2>
+                </div>
+                <ul
+                  class="c-footer__menu menu-footer content"
+                  id="collapsible-account-footer-03--footer"
+                >
+                  <li class="c-footer__menu-item">
+                    <a
+                      class="c-footer__menu-link"
+                      href="#"
+                      title="Go to Store Locator"
+                      >Store Locator</a
+                    >
+                  </li>
+                  <li class="c-footer__menu-item">
+                    <a
+                      class="c-footer__menu-link"
+                      href="#"
+                      target="_blank"
+                      title="Go to Careers"
+                      rel="noopener noreferrer"
+                      >Careers</a
+                    >
+                  </li>
+                  <li class="c-footer__menu-item">
+                    <a
+                      class="c-footer__menu-link"
+                      href="#"
+                      target="_blank"
+                      title="Go to Sustainability"
+                      >Sustainability</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <div class="c-footer__item footer-item col-lg-2 col-12 store">
+                <div class="position-relative">
+                  <button
+                    aria-controls="collapsible-account-footer-04--footer"
+                    aria-expanded="false"
+                    class="c-footer__title btn text-left btn-block d-lg-none js-footer-button"
+                  >
+                    Legal &amp; Privacy
+                  </button>
+                  <h2 class="c-footer__title d-none d-lg-block">
+                    Legal &amp; Privacy
+                  </h2>
+                </div>
+                <ul
+                  class="c-footer__menu menu-footer content"
+                  id="collapsible-account-footer-04--footer"
+                >
+                  <li class="c-footer__menu-item">
+                    <a
+                      class="c-footer__menu-link"
+                      href="#"
+                      title="Go to Privacy Policies"
+                      >Privacy Policies</a
+                    >
+                  </li>
+                  <li class="c-footer__menu-item">
+                    <a
+                      class="c-footer__menu-link"
+                      href="#"
+                      title="Go to Cookie Policy"
+                      >Cookie Policy</a
+                    >
+                  </li>
+                  <li class="c-footer__menu-item">
+                    <a
+                      class="c-footer__menu-link"
+                      href="#"
+                      title="Go to Responsible disclosure policy"
+                      >Responsible disclosure policy</a
+                    >
+                  </li>
+                  <li class="c-footer__menu-item">
+                    <a
+                      class="c-footer__menu-link"
+                      href="#"
+                      title="Go to Website terms of use"
+                      >Website terms of use</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="row">
+              <div class="c-footer__copyright col-12 copyright-notice">
+                <div class="content-asset">
+                  <p class="c-footer__copyright-text copyright">
+                    © MENOL - ALL RIGHTS RESERVED
+                  </p>
+                  <span> - </span>
+                  <h1 class="kl-home-h1">MENOL International Online Store</h1>
+                </div>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="newsletter-container d-none js-dialog" role="dialog"></div>
+      </footer>
+     
+    </div>
+   
+   
+  </body>
+</html>
