@@ -1,2 +1,2 @@
 # Menol
-Menol - Lxuary men's wear brand
+Menol - Luxury men's wear brand
